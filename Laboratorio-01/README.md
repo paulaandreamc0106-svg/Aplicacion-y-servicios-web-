@@ -310,19 +310,19 @@ Reemplace el siguiente bloque con su diagrama:
 
 ``` mermaid
 flowchart LR
-    A[Usuario] --> │Ingresa a la pagina│ B[Navegador]
-    B --> │GET /formatos-institucionales/│ C[Servidor ITM]
-    C --> │200 OK + documento HTML│ B
+    A[Usuario] -->│Ingresa a la pagina│ B[Navegador]
+    B -->│GET /formatos-institucionales/│ C[Servidor ITM]
+    C -->│200 OK + documento HTML│ B
     B --> D[DOM]
     D --> E[Interfaz]
 
-    B --> │Solicita CSS, JavaScript e imágenes│ C
-    C --> │Entrega recursos│ B
-    B --> │Actualiza el DOM│ D
+    B -->│Solicita CSS, JavaScript e imágenes│ C
+    C -->│Entrega recursos│ B
+    B -->│Actualiza el DOM│ D
 
-    A --> │Hace clic en Facebook│ B
-    B --> │POST /tr/│ F[Servidor Facebook]
-    F --> │200 OK│ B
+    A -->│Hace clic en Facebook│ B
+    B -->│POST /tr/│ F[Servidor Facebook]
+    F -->│200 OK│ B
 ```
 
 ------------------------------------------------------------------------
